@@ -12,12 +12,14 @@
     <title>Forms Challenge</title>
   </head>
   <body>
-    <h1>Contact us</h1>
+    <header>
+        <h1>Contact us</h1>
+    </header>
     <main>
-        <section>
+        <section id="form">
             <form action="/" method="GET">
             <section id="personal-data">
-            <h1>How can we help you?</h1>
+            <h2>How can we help you?</h2>
             <ul>
                 <li>
                     <label for="user-name">Your name</label>
@@ -48,23 +50,25 @@
         <section id="reply">
             <h2>How should we reply?</h2>
             <ul>
-                <li>
+                <li class="form-control-inline">
                     <input type="radio" id="user-reply" name="user-reply" required>
                     <label for="user-reply">Call me</label>
                 </li>
-                <li>
+                <li class="form-control-inline">
                     <input type="radio" id="user-reply" name="user-reply" required>
                     <label for="user-reply">Send me an email</label>
                 </li>
-                <li>
+                <li class="form-control-inline">
                     <input type="radio" id="user-reply" name="user-reply" requiered>
                     <label for="user-reply">Don't reply</label>
                 </li>
             </ul>
         </section>
         <section id="terms">
-            <input type="checkbox" id="accept-terms" name="accept-terms" required>
-            <label id="accept-terms">Accept terms and Conditions</label>
+            <div class="form-control-inline">
+                <input type="checkbox" id="accept-terms" name="accept-terms" required>
+                <label id="accept-terms">Accept terms and Conditions</label>
+            </div>
         </section>
         <section id="buttons">
             <button type="reset">Clear</button>

@@ -2,3 +2,49 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: rgb(192, 231, 255);
 }
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+}
+
+main {
+  margin-bottom: 3rem;
+}
+h2 {
+  font-weight: 600;
+}
+#form {
+  width: 50%;
+  background-color: white;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  border-radius: 6px;
+  box-shadow: 0.1rem 0.1rem 0.1rem rgb(210, 209, 209);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+label {
+  margin: 0.5rem auto;
+  display: block;
+}
+
+input,
+textarea,
+select {
+  display: block;
+  font: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+.form-control-inline {
+  display: flex;
+}
