@@ -1,16 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="/stylesheet.css" />
+    <title>Forms Challenge</title>
+  </head>
+  <body>
+    <h1>Contact us</h1>
+    <main>
+        <section>
+            <form action="/" method="GET">
+            <section id="personal-data">
+            <h1>How can we help you?</h1>
+            <ul>
+                <li>
+                    <label for="user-name">Your name</label>
+                    <input type="text" id="user-name" name="user-name" required placeholder="William Wallace">
+                </li>
+                <li>
+                    <label for="user-email">Your E-mail Address</label>
+                    <input type="text" id="user-email" name="user-name" placeholder="example@example.com">
+                </li>
+                <li>
+                    <label for="user-phone">Your Phone Number</label>
+                    <input type="number" id="user-phone" name="user-phone" required min="8" placeholder="+49 15906425896">
+                </li>
+            </ul>
+        </section>
+        <section id="message">
+            <label for="user-message">Your Message</label>
+            <textarea id="user-message" name="user-message" required rows="8" ></textarea>
+        </section>
+        <section id="find">
+            <label for="find-us">How did you find us?</label>
+            <select id="find-us" name='find-us' >
+                <option value="web-search">Web Search</option>
+                <option  value="friends">Friends</option>
+                <option value="adds">Adds</option>       
+            </select>
+        </section>
+        <section id="reply">
+            <h2>How should we reply?</h2>
+            <ul>
+                <li>
+                    <input type="radio" id="user-reply" name="user-reply" required>
+                    <label for="user-reply">Call me</label>
+                </li>
+                <li>
+                    <input type="radio" id="user-reply" name="user-reply" required>
+                    <label for="user-reply">Send me an email</label>
+                </li>
+                <li>
+                    <input type="radio" id="user-reply" name="user-reply" requiered>
+                    <label for="user-reply">Don't reply</label>
+                </li>
+            </ul>
+        </section>
+        <section id="terms">
+            <input type="checkbox" id="accept-terms" name="accept-terms" required>
+            <label id="accept-terms">Accept terms and Conditions</label>
+        </section>
+        <section id="buttons">
+            <button type="reset">Clear</button>
+            <button type="submit"> Submit</button>
+        </section>
+        </section>
+        
+    </form>
+    </main>
+  </body>
 </html>
